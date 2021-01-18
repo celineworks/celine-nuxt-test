@@ -20,7 +20,7 @@ export default {
   generate: {
     async routes() {
       const pages = await axios
-        .get('https://celine-test.microcms.io//api/v1/blog?limit=100', {
+        .get('https://celine-test.microcms.io/api/v1/blog?limit=100', {
           headers: { 'X-API-KEY': '9119be3c-501d-456d-a158-0d2025a88549' }
         })
         .then((res) =>
