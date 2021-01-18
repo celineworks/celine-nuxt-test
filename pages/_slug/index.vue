@@ -13,7 +13,7 @@ import axios from 'axios'
 export default {
   async asyncData({ params }) {
     const { data } = await axios.get(
-      `https://celine-test.microcms.io//api/v1/blog/${params.slug}`,
+      `https://celine-test.microcms.io/api/v1/blog/${params.slug}`,
       {
         headers: { 'X-API-KEY': '9119be3c-501d-456d-a158-0d2025a88549' }
       }
